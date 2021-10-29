@@ -2,3 +2,9 @@ body{
     background-image: url("../images/WallpaperDog-10703063.jpg");
     background-size: cover;
 }
+.navbar-nav a {
+    font-size: 20px;
+}
+.nav-item .dropdown-item a{
+    color: orange;
+}
