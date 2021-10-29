@@ -7,16 +7,22 @@
 
         body {
             background-image: url("Images/background.jpeg");
+            background-size: cover;
         }
 
         .nav-item li {
             text-align: center;
         }
 
-        .col-sm-4 {
-
+        .col-sm-12 img{
+            object-fit: cover;
+            width: 1920px;
+            height: 800px
         }
 
+        .col-sm-4 {
+            text-align: center;
+        }
     </style>
 
 
@@ -67,8 +73,8 @@
 </nav>
 <br>
 <div class="row" style="padding-left: 100px; padding-right: 100px;">
-    <div class="col-sm-8">
-        <img src="Images/internet.jpeg" style="object-fit: cover; width: 1225px; height: 400px">
+    <div class="col-sm-12">
+        <img src="Images/internet.jpeg" style="">
     </div>
     <div class="col-sm-8" style="background-color: black">
     </div>
@@ -88,9 +94,8 @@
         </p>
     </div>
 </div>
-<div class="row" style="padding-left: 100px; padding-top: 50px">
+<div class="row">
     <div class="col-sm-4">
-        <p></p>
     </div>
     <div class="col-sm-4" style="padding-bottom: 50px">
         <a href="index.html">1</a>
