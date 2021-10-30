@@ -14,6 +14,8 @@ body {
 
 .col-sm-12 {
     max-width: 100%;
+    /*position: relative;*/
+    /*background-image: url("../Images/background.jpeg");*/
 }
 
 .col-sm-4 {
@@ -29,3 +31,20 @@ footer {
     text-align: center;
     padding-bottom: 50px;
 }
+.hero-image {
+    position: relative;
+    opacity: 100%;
+    max-width: 100%;
+    width: 100%;
+
+}
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-80%, -50%);
+    color: white;
+    font-family: "Al Nile";
+}
+
+
