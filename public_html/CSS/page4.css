@@ -1,38 +1,8 @@
-body{
-    /*background-image: url("../Images/WallpaperDog-10703063.jpg");*/
-    background-size: cover;
-    /*position: relative;*/
-    /*width: 100vw;*/
-    /*height: 100vh;*/
-    font-family: Verdana;
-    margin: 0;
-    position: relative;
-}
-.navbar-nav a {
-    font-size: 20px;
-}
+
 #footer{
     text-align: center;
 }
 
-.navbar-nav {
-
-}
-.nav-item a {
-    position: relative;
-    display: inline-block;
-    font-size: 30px;
-    font-weight: 500;
-    color: royalblue;
-    overflow: hidden;
-    background: linear-gradient(to right, orangered 50%, orange 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 275ms ease;
-}
 a:hover {
     background-position: 0 100%;
 }
