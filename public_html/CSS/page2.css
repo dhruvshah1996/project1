@@ -1,11 +1,6 @@
-.row {
-    padding-right: 100px;
-    padding-left: 100px;
-    font-family: Verdana;
-}
+
 
 h1{
-    padding-left: 100px;
     font-family: Verdana;
 }
 
@@ -28,12 +23,6 @@ h1{
     /*height: 100%;*/
 }
 
-@media only screen and (max-width: 500px) {
-    .col-sm-4 img {
-        grid-template-columns: 100%;
-    }
-}
-
 .unit_nav a{
     border: 1px solid;
     color: #339;
@@ -48,5 +37,13 @@ a:-webkit-any-link {
 }
 .unit_nav {
     font-size: 20px;
+    text-align: center;
+}
+
+.container a {
+    padding-right: 3%;
+}
+
+.footer a {
     text-align: center;
 }
