@@ -2,7 +2,10 @@
 
 [History of the internet](http://dpjhistoryproject.eastus.azurecontainer.io/)
 
-#Team: 
-#Dhruv Shah (pages home to 3)
-#Jay Patel (pages 4 to 6)
-#Purav Patel (pages 7 to 9)
+Team: 
+
+Dhruv Shah (pages home to 3)
+
+Jay Patel (pages 4 to 6)
+
+Purav Patel (pages 7 to 9)
