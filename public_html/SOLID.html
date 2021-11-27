@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>OOP Principles</title>
+    <title>SOLID Principles</title>
 
     <link href="CSS/AAATesting.css" rel="stylesheet">
     <link href="CSS/global.css" rel="stylesheet">
@@ -62,31 +62,27 @@
 
     <div class="row" style="border-top: 2px solid black">
         <div class="col-sm-8">
-            <h2 class="mt-3">Polymorphism</h2>
-            <p>What is Polymorphism ?
+            <h2 class="mt-3">S (Single Responsibility)</h2>
+            <p>What is Single Responsibility ?
             </p>
             <p>
-                Polymorphism gives a way to use a clas exactly like its parent so there's no confusion with mixing types.
-                But each child class keeps its own methods as they are.
-                This typically happens by defining a parent interface to be reused. It outlines a bunch of common methods.
-                Then, each child class implements its own version of these methods.
+                a function does one thing and one thing only
+                sometimes one thing is to call other function that’s its responsibility
             </p>
             <p>
-                <ul>
-                    <li>To look at an example for this look to the right</li>
-                    <li>As you can see we are importing the parent class which is called "Calculations"</li>
-                    <li>The Calculations class already has all the history methods that we want added to the program</li>
-                    <li>In this test class we are calling each of those history methods and using them differently than how the parent class(upper picture) uses them</li>
-                    <li>In the bottom picture is the child classes that is calling these methods and using its own variation of it</li>
-                </ul>
+            <ul>
+                <li>To look at an example for this look to the right</li>
+                <li>As you can see the function of calculator class has only one responsibility</li>
+                <li>Its only job is to call the addition, subtraction, multiplication, and division methods</li>
+                <li>It cannot do anything else if it does it mess's up the other classes that are calling this class</li>
+            </ul>
             </p>
         </div>
 
         <div class="col-sm-4">
-            <img src="Images/Polymorphism%20Parent%20class.png" alt="Parent Class" style="height: 50%" class="mt-3">
-            <span style="font-weight: bold">Parent Class</span>
-            <img src="Images/Polymorphism%20Child%20class.png" alt="Child Class" style="height: 40%">
-            <span style="font-weight: bold">Child class</span>
+            <img src="Images/Single%20Responsibility.png" alt="Parent Class" style="height: 90%" class="mt-3">
+            <span style="font-weight: bold">Single Responsibility</span>
+
         </div>
     </div>
 </div>
@@ -95,28 +91,27 @@
     <div class="container" style="border-top: 2px solid black">
         <div class="row mt-3">
             <div class="col-sm-8">
-                <h2>Encapsulation</h2>
+                <h2>O (Open and Close)</h2>
                 <p>
-                    What is Encapsulation ?
+                    What is Open and Close ?
                 </p>
                 <p>
-                    Encapsulation is achieved when each object keeps its state private,
-                    inside a class. Other objects don't have access to this state. Instead,
-                    they can only call a list of public functions which are called methods.
+                    functions and classes should be open for extensions and closed for modifications.
+                    For example, it means that if you want to add to it, you can, but you can’t modify it as in you can’t change what the function does,
+                    but you can add to it so in the addition function in branch 4
+                    if you want to add a bunch of numbers you can, but you can’t make it, so it adds and subtracts.
                 </p>
                 <p>
-                    <ul>
-                        <li>One of the examples for Encapsulation is on the right</li>
-                        <li>You can see that we are making an object of the class "Calculator" called "calc"</li>
-                        <li>After that with the object we are calling the method "substraction" inside the class "Calculator" </li>
-                        <li>Then we are giving the substraction method values to test and asserting the answer</li>
-                    </ul>
+                <ul>
+                    <li>One of the examples for Open and Close is on the right</li>
+                    <li>You can see that we are using the addition method to add a bunch of numbers</li>
+                </ul>
                 </p>
             </div>
 
             <div class="col-sm-4">
-                <img src="Images/Encapsulation.png" style="height: 90%" alt="Encapsulation">
-                <span style="font-weight: bold">Encapsulation Example</span>
+                <img src="Images/Open%20and%20Close.png" style="height: 90%" alt="Encapsulation">
+                <span style="font-weight: bold">Open and Close Example</span>
             </div>
         </div>
     </div>
@@ -166,13 +161,13 @@
                     The benefit is that it provides re-usability of a code.
                 </p>
                 <p>
-                    <ul>
-                        <li>For this the example is on the right</li>
-                        <Li>If you carefully look at the code you can see that we are using the Multiplication class</Li>
-                        <li>Not only are we using that class, but we are using its properties with our own values</li>
-                        <Li>Which shows that we are using the class properties and adding our own modifications to it
+                <ul>
+                    <li>For this the example is on the right</li>
+                    <Li>If you carefully look at the code you can see that we are using the Multiplication class</Li>
+                    <li>Not only are we using that class, but we are using its properties with our own values</li>
+                    <Li>Which shows that we are using the class properties and adding our own modifications to it
                         without changing the parent class</Li>
-                    </ul>
+                </ul>
                 </p>
             </div>
 
@@ -191,8 +186,8 @@
 <footer class="container mt-4 mb-4">
     <div class="copyright mb-3" style="text-align: center">Dhruv Shah&#169;</div>
     <div class="links" style="text-align: center">
-        <a href="https://github.com/dhruvshah1996/calc2/tree/Branch_4">Polymorphism Code</a>
-        <a href="https://github.com/dhruvshah1996/calc2/tree/main">Encapsulation Example</a>
+        <a href="https://github.com/dhruvshah1996/calc2">Single Responsibility Example</a>
+        <a href="https://github.com/dhruvshah1996/calc2/tree/Branch_4">Open and Close Example</a>
         <a href="https://github.com/dhruvshah1996/calc2/tree/main">Abstraction Example</a>
         <a href="https://github.com/dhruvshah1996/calc2/tree/Branch_4">Inheritance Example</a>
         <a href=https://github.com/dhruvshah1996/project1/tree/Article_2>Github Link</a>
