@@ -58,7 +58,7 @@
 
 <div class="container">
 
-    <h1 class="mt-5 mb-4">Python OOP Principles</h1>
+    <h1 class="mt-5 mb-4">SOLID Principles</h1>
 
     <div class="row" style="border-top: 2px solid black">
         <div class="col-sm-8">
@@ -119,31 +119,29 @@
 <div class="container" style="border-top: 2px solid black">
     <div class="row mt-3">
         <div class="col-sm-8">
-            <h3>Abstraction</h3>
+            <h3>L (Liskov Substitution Principle)</h3>
             <p>
-                What is Abstractaion ?
+                What is Liskov Substitution Principle ?
             </p>
             <P>
-                Abstraction can be thought of as a natural extension of encapsulation.
-                In object-oriented design, programs are often extremely large, and separate
-                objects communicate with each other a lot, so maintaining a large codebase
-                like this for years - with changes along the way can be difficult. Abstraction is your solution
-                to this problem.
+                it means that the children class can depend on the parent,
+                but the parent class shouldn’t depend on the child class
+
             </P>
             <p>
             <ul>
-                <li>One of the examples for Abstraction is on the right</li>
-                <li>You can see that we are importing the class "Calculator"</li>
-                <li>After that we are able to creat an object of it in the "test_addition" method called "calc" </li>
-                <li>Then we are using the "calc" object to do the tests on the "addition" method from the "Calculator" class</li>
-                <Li>Which we were able to do because we imported the class "Calculator" which is an example of Abstraction</Li>
+                <li>One of the examples for this is on the right</li>
+                <li>You can see that the multiplication, addition, etc classes have the calculation class imported</li>
+                <li>The reason why is because the calculation class has
+                    the method that allows the child classes to do more things</Li>
+                <li>Which we see in open and close where the addition method is able to add multiple numbers</li>
             </ul>
             </p>
         </div>
 
         <div class="col-sm-4">
-            <img src="Images/Abstraction.png" alt="Abstraction">
-            <span style="font-weight: bold">Abstraction Example</span>
+            <img src="Images/Lishkov%20.png" alt="Abstraction">
+            <span style="font-weight: bold">Liskov Substitution Example</span>
         </div>
     </div>
 
@@ -152,45 +150,76 @@
     <div class="container" style="border-top: 2px solid black">
         <div class="row mt-3">
             <div class="col-sm-8">
-                <h2>Inheritance</h2>
+                <h2>I (Interface Segregation)</h2>
                 <p>
-                    What is Inheritance ?
+                    What is Interface Segregation ?
                 </p>
                 <p>
-                    Inheritance is the capability of one class to derive or inherit the properties from another class.
-                    The benefit is that it provides re-usability of a code.
+                    in OOP for the most part you have what’s called single inheritance
+                    which is basically parent child inheritance you can’t have parent child and grandchildren
                 </p>
                 <p>
                 <ul>
-                    <li>For this the example is on the right</li>
-                    <Li>If you carefully look at the code you can see that we are using the Multiplication class</Li>
-                    <li>Not only are we using that class, but we are using its properties with our own values</li>
-                    <Li>Which shows that we are using the class properties and adding our own modifications to it
-                        without changing the parent class</Li>
+                    <li>For this we dont really have a good example in our calculator program</li>
+                    <li>The reason why is because the idea is to have a class and an interface</li>
+                    <Li>The interface is supposed to tell the class what it is supposed to do</Li>
+                    <li>But we dont use interface like that in python much</li>
+                    <Li>If you look to the right though you will see an example of this</Li>
+                    <li>Since we dont use interface in python this is a good example since each method is only doing one thing
+                    and it is inheriting its properties from the parent class</li>
                 </ul>
                 </p>
             </div>
 
             <div class="col-sm-4">
-                <img src="Images/Inheritance.png" style="height: 90%" alt="Inheritance">
-                <span style="font-weight: bold">Inheritance Example</span>
+                <img src="Images/Interface%20Segragation.png" style="height: 90%" alt="Inheritance">
+                <span style="font-weight: bold">Interface Segregation Example</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w-100 bg-orange-light py-5">
+    <div class="container" style="border-top: 2px solid black">
+        <div class="row mt-3">
+            <div class="col-sm-8">
+                <h2>D (Dependency Inversion Principle)</h2>
+                <p>
+                    What is Dependency Inversion Principle ?
+                </p>
+                <p>
+                    rule to prevent your code from being to tied up and be able to have your code to be able to be re used.
+                    One of the main thing you should focus when writing code is that make sure your code can be re used
+                </p>
+                <p>
+                <ul>
+                    <li>The entire calculator program we are following this rule</li>
+                    <li>The reason why is because each of our functions and classes are being re used</li>
+                    <Li>The one class we can take for example is the calculation class</Li>
+                    <li>Each of the child class is using that parent class to get the properties for them</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="col-sm-4">
+                <img src="Images/Dependancy.png" style="height: 90%" alt="Inheritance">
+                <span style="font-weight: bold">Dependency Inversion Example</span>
             </div>
         </div>
     </div>
 </div>
 <div class="unit_nav">
-    <a href="AAATesting.html"> &lt; Previous</a>
-    Page 11 of 13
-    <a href="SOLID.html"> Next > </a>
+    <a href="OOPs.html"> &lt; Previous</a>
+    Page 13 of 13
 </div>
 <footer class="container mt-4 mb-4">
     <div class="copyright mb-3" style="text-align: center">Dhruv Shah&#169;</div>
     <div class="links" style="text-align: center">
         <a href="https://github.com/dhruvshah1996/calc2">Single Responsibility Example</a>
         <a href="https://github.com/dhruvshah1996/calc2/tree/Branch_4">Open and Close Example</a>
-        <a href="https://github.com/dhruvshah1996/calc2/tree/main">Abstraction Example</a>
-        <a href="https://github.com/dhruvshah1996/calc2/tree/Branch_4">Inheritance Example</a>
-        <a href=https://github.com/dhruvshah1996/project1/tree/Article_2>Github Link</a>
+        <a href="https://github.com/dhruvshah1996/calc2/tree/Branch_4">Liskov Substitute Example</a>
+        <a href="https://github.com/dhruvshah1996/calc2/tree/Branch_4">Dependency Inversion Example</a>
+        <a href="https://levelup.gitconnected.com/s-o-l-i-d-principles-explained-in-python-with-examples-83b2b43bdcde">Interface Segregation Example</a>
+        <a href=https://github.com/dhruvshah1996/project1/tree/Article_3>Github Link</a>
         <img src="Images/W3c.png" alt="w3c html validation" width="100" height="50">
     </div>
 </footer>
