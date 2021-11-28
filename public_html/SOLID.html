@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOLID Principles</title>
+
+    <link href="CSS/AAATesting.css" rel="stylesheet">
+    <link href="CSS/global.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/index.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="Images/Logo-removebg-preview.png" class="main-logo" alt="...">
+        </a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-nav-scroll ">
+                <li class="nav-item justify-content-end">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="pylint.html">Pylint </a>
+
+                </li>
+                <li class="nav-item dropdown flex-column-sm alignn-items-sm-end user-profile-dd">
+                    <a class="nav-link dropdown-toggle justify-content-center align-items-center" href="#"
+                       id="navbarDropdown1" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="Images/profileicon.jpg" alt='user_avatar' class="me-2 rounded-circle user-avatar">User
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li><a class="dropdown-item" href="profile.html">Edit Profile</a></li>
+                        <li><a class="dropdown-item" href="logout.html">Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h1 class="mt-5 mb-4">SOLID Principles</h1>
+
+    <div class="row" style="border-top: 2px solid black">
+        <div class="col-sm-8">
+            <h2 class="mt-3">S (Single Responsibility)</h2>
+            <p>What is Single Responsibility ?
+            </p>
+            <p>
+                a function does one thing and one thing only
+                sometimes one thing is to call other function that’s its responsibility
+            </p>
+            <p>
+            <ul>
+                <li>To look at an example for this look to the right</li>
+                <li>As you can see the function of calculator class has only one responsibility</li>
+                <li>Its only job is to call the addition, subtraction, multiplication, and division methods</li>
+                <li>It cannot do anything else if it does it mess's up the other classes that are calling this class</li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="col-sm-4">
+            <img src="Images/Single%20Responsibility.png" alt="Parent Class" style="height: 90%" class="mt-3">
+            <span style="font-weight: bold">Single Responsibility</span>
+
+        </div>
+    </div>
+</div>
+
+<div class="w-100 bg-orange-light py-5">
+    <div class="container" style="border-top: 2px solid black">
+        <div class="row mt-3">
+            <div class="col-sm-8">
+                <h2>O (Open and Close)</h2>
+                <p>
+                    What is Open and Close ?
+                </p>
+                <p>
+                    functions and classes should be open for extensions and closed for modifications.
+                    For example, it means that if you want to add to it, you can, but you can’t modify it as in you can’t change what the function does,
+                    but you can add to it so in the addition function in branch 4
+                    if you want to add a bunch of numbers you can, but you can’t make it, so it adds and subtracts.
+                </p>
+                <p>
+                <ul>
+                    <li>One of the examples for Open and Close is on the right</li>
+                    <li>You can see that we are using the addition method to add a bunch of numbers</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="col-sm-4">
+                <img src="Images/Open%20and%20Close.png" style="height: 90%" alt="Encapsulation">
+                <span style="font-weight: bold">Open and Close Example</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" style="border-top: 2px solid black">
+    <div class="row mt-3">
+        <div class="col-sm-8">
+            <h3>L (Liskov Substitution Principle)</h3>
+            <p>
+                What is Liskov Substitution Principle ?
+            </p>
+            <P>
+                it means that the children class can depend on the parent,
+                but the parent class shouldn’t depend on the child class
+
+            </P>
+            <p>
+            <ul>
+                <li>One of the examples for this is on the right</li>
+                <li>You can see that the multiplication, addition, etc classes have the calculation class imported</li>
+                <li>The reason why is because the calculation class has
+                    the method that allows the child classes to do more things</Li>
+                <li>Which we see in open and close where the addition method is able to add multiple numbers</li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="col-sm-4">
+            <img src="Images/Lishkov%20.png" alt="Abstraction">
+            <span style="font-weight: bold">Liskov Substitution Example</span>
+        </div>
+    </div>
+
+</div>
+<div class="w-100 bg-orange-light py-5">
+    <div class="container" style="border-top: 2px solid black">
+        <div class="row mt-3">
+            <div class="col-sm-8">
+                <h2>I (Interface Segregation)</h2>
+                <p>
+                    What is Interface Segregation ?
+                </p>
+                <p>
+                    in OOP for the most part you have what’s called single inheritance
+                    which is basically parent child inheritance you can’t have parent child and grandchildren
+                </p>
+                <p>
+                <ul>
+                    <li>For this we dont really have a good example in our calculator program</li>
+                    <li>The reason why is because the idea is to have a class and an interface</li>
+                    <Li>The interface is supposed to tell the class what it is supposed to do</Li>
+                    <li>But we dont use interface like that in python much</li>
+                    <Li>If you look to the right though you will see an example of this</Li>
+                    <li>Since we dont use interface in python this is a good example since each method is only doing one thing
+                    and it is inheriting its properties from the parent class</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="col-sm-4">
+                <img src="Images/Interface%20Segragation.png" style="height: 90%" alt="Inheritance">
+                <span style="font-weight: bold">Interface Segregation Example</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w-100 bg-orange-light py-5">
+    <div class="container" style="border-top: 2px solid black">
+        <div class="row mt-3">
+            <div class="col-sm-8">
+                <h2>D (Dependency Inversion Principle)</h2>
+                <p>
+                    What is Dependency Inversion Principle ?
+                </p>
+                <p>
+                    rule to prevent your code from being to tied up and be able to have your code to be able to be re used.
+                    One of the main thing you should focus when writing code is that make sure your code can be re used
+                </p>
+                <p>
+                <ul>
+                    <li>The entire calculator program we are following this rule</li>
+                    <li>The reason why is because each of our functions and classes are being re used</li>
+                    <Li>The one class we can take for example is the calculation class</Li>
+                    <li>Each of the child class is using that parent class to get the properties for them</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="col-sm-4">
+                <img src="Images/Dependancy.png" style="height: 90%" alt="Inheritance">
+                <span style="font-weight: bold">Dependency Inversion Example</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="unit_nav">
+    <a href="OOPs.html"> &lt; Previous</a>
+    Page 13 of 13
+</div>
+<footer class="container mt-4 mb-4">
+    <div class="copyright mb-3" style="text-align: center">Dhruv Shah&#169;</div>
+    <div class="links" style="text-align: center">
+        <a href="https://github.com/dhruvshah1996/calc2">Single Responsibility Example</a>
+        <a href="https://github.com/dhruvshah1996/calc2/tree/Branch_4">Open and Close Example</a>
+        <a href="https://github.com/dhruvshah1996/calc2/tree/Branch_4">Liskov Substitute Example</a>
+        <a href="https://github.com/dhruvshah1996/calc2/tree/Branch_4">Dependency Inversion Example</a>
+        <a href="https://levelup.gitconnected.com/s-o-l-i-d-principles-explained-in-python-with-examples-83b2b43bdcde">Interface Segregation Example</a>
+        <a href=https://github.com/dhruvshah1996/project1/tree/Article_3>Github Link</a>
+        <img src="Images/W3c.png" alt="w3c html validation" width="100" height="50">
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
