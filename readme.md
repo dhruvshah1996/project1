@@ -1,7 +1,7 @@
 # History of Internet
 
 [History of the internet](http://dpjhistoryproject.eastus.azurecontainer.io/)
-[Python Project](http://http://pythonproject.eastus.azurecontainer.io/pylint.html)
+[Python Project](http://pythonproject.eastus.azurecontainer.io/pylint.html)
 
 Team: 
 
